@@ -1,42 +1,78 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  background-color: #D9D9D9;
+}
+button {
+  background-color: #00000033;
+  height: 3rem;
+  width:
+}
+button:hover {
+  cursor: pointer;
+  background-color: #0000004D;
+}
+input {
+
+  height: 2.536875rem
+}
+.login-register-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.borderless {
+  border-style: none;
+  margin: 1.5rem
+}
+.borderless:focus{
+  outline: 0px;
+}
+.nav-and-tree{
+  display: flex;
+
+  margin-top: 1rem;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+
+  margin: 0.5rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Login Page */
+#login-elements-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height:90vh
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#register-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Register Page */
+#register-elements-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  height:90vh;
 }
 
-.card {
-  padding: 2em;
-}
+/* Home Tree Page */
+#home-tree {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
 
-.read-the-docs {
-  color: #888;
+  height: 60vh;
+  width: 70vw;
 }
